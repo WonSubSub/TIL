@@ -5,7 +5,7 @@ horizontal = [x for x in range(1, h+1)]
 vertical = [x for x in range(1, v+1)]
 
 def cut(line, list):
-    list.insert(list.index(line)+1 , 0)
+    list.insert(list.index(line) + 1 , 0)
     return list
 
 def max_length(list):
