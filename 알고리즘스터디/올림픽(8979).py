@@ -5,7 +5,7 @@ for i in range(n):
     country, gold, silver, bronze = map(int, input().split(' '))
     result.append((gold, silver, bronze, country))
 
-result = sorted(result)[::-1]
+result = sorted(result, reverse=True)
 
 for i in range(n):
     if result[i][-1] == place:
