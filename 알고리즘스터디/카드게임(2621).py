@@ -8,7 +8,6 @@ for i in range(5):
 
 ans = []
 
-
 for i in number:
     if number.count(i) == 3:
         for a in number:
@@ -22,7 +21,6 @@ for i in number:
         ans.append(i + 200)
     if number.count(i) == 4:
         ans.append(800 + i)
-
     ans.append(100 + i)
 
 series = 1

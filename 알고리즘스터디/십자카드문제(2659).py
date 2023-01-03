@@ -6,16 +6,6 @@ def sum_from_one(num):
         sum += i
     return sum
 
-# [1,1,1,1]
-# [3,4,6,8]
-# 1, 9~1
-# 2, 8~1
-# 3, 7~1
-# 4, 6~5
-# 5, 5~4
-# 8, 2~1
-# 9, 1~1
-
 ans = 0
 
 first = number[0]
