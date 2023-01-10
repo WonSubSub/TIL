@@ -7,6 +7,7 @@ key_words = set()
 for i in range(key_num):
     key_word = input().strip()
     key_words.add(key_word)
+    # key_words[key_word] = 1
 
 answer = key_num
 for i in range(cnt):
@@ -20,4 +21,11 @@ for i in range(cnt):
             key_words.remove(word)
             answer -= 1
     print(answer)
-    
+
+    # words = input().strip().split(',')
+    # for word in words:
+    #     if word in key_words.keys():
+    #         if key_words[word] == 1:
+    #             key_words[word] = 0
+    #             answer -= 1
+    # print(answer)
