@@ -12,7 +12,6 @@ min_num = min(new_numbers)
 # for i in range(len(new_numbers)):
 
 
-
 soo_list = []
 def soo(soo_list, numbers, i):
     
