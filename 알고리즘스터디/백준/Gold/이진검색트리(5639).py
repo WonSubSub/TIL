@@ -1,5 +1,3 @@
-# [[[[5], 24, [28]], 30, [45]], 50, [[52, [60]], 98]]
-
 # [[], 50, []]
 # [[[], 30, []], 50, []]
 # [[[[], 24, []], 30, []], 50, []]
@@ -9,12 +7,15 @@
 # [[[[[], 5, []], 24, [[], 28, []]], 30, [[], 45, []]], 50, [[], 98, []]]
 # [[[[[], 5, []], 24, [[], 28, []]], 30, [[], 45, []]], 50, [[[], 52, []], 98, []]]
 # [[[[[], 5, []], 24, [[], 28, []]], 30, [[], 45, []]], 50, [[[], 52, [[], 60, []]], 98, []]]
+# [[[[5], 24, [28]], 30, [45]], 50, [[52, [60]], 98]]
+
+import sys
+sys.setrecursionlimit(10**6)
+input = sys.stdin.readline
 
 def insert_node(number, tree):
     if tree == []:
-        tree.append(number)
-        tree.insert(0,[])
-        tree.insert(2,[])
+        tree.extend([[], number, []])
     else:
         if number < tree[1]:
             return insert_node(number, tree[0])
@@ -40,4 +41,5 @@ while True:
         insert_node(number, tree)
     except:
         break
+    
 print_tree(numbers, tree)
